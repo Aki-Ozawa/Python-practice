@@ -25,3 +25,5 @@ output = ""
 for character in phone:
     output += digits_mapping.get(character, "!") + " "
 print(output)
+
+# when the character is not found in the dictiinary, it used "!"
