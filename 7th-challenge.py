@@ -1,9 +1,13 @@
-try:
-    age = int(input('Age: '))
-    income = 20000
-    risk = income / age 
-    print(f"Your age is {age}")
-except ZeroDivisionError:
-    print('Age cannot be 0.')
-except ValueError:
-    print('Invalid value')
+class Person:
+   def __init__(self, name):
+       self.name = name
+    
+   def talk(self):
+       print(f"Hi, I am {self.name}")
+
+
+john = Person("John Smith")
+john.talk()
+
+bob = Person("Bob Smith")
+bob.talk()
